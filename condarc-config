@@ -1,0 +1,24 @@
+# channel locations. These override conda defaults, i.e., conda will
+# search *only* the channels listed here, in the order given.
+# Use "defaults" to automatically include all default channels.
+# Non-url channels will be interpreted as Anaconda.org usernames
+# (this can be changed by modifying the channel_alias key; see below).
+# The default is just 'defaults'.
+channels:
+  - defaults
+  - conda-forge
+  - bioconda
+  - r
+
+# Newest package installed over channel priority
+channel_priority: False
+
+# Show channel URLs when displaying what is going to be downloaded
+# and in 'conda list'. The default is False.
+show_channel_urls: True
+
+# Better compatible and interoperability with pip
+pip_interop_enabled: True
+
+# For more information about this file see:
+# https://conda.io/docs/user-guide/configuration/use-condarc.html
